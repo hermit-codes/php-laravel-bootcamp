@@ -1,0 +1,20 @@
+# Store text files with LF line endings
+* text=auto
+
+# Keep source code and documentation consistent
+*.php text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.blade.php text eol=lf
+
+# Windows scripts use CRLF
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Binary files
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary
