@@ -64,7 +64,7 @@ The Book Manager project will evolve throughout the curriculum, allowing previou
 - [x] 01.01 — PHP Syntax, Variables & Output
 - [x] 01.02 — Data Types & Type Conversion
 - [x] 01.03 — Operators & Expressions
-- [ ] 01.04 — Conditional Statements
+- [x] 01.04 — Conditional Statements
 - [ ] 01.05 — Match Expressions
 - [ ] 01.06 — Loops & Iteration
 - [ ] 01.07 — Indexed Arrays
