@@ -65,7 +65,7 @@ The Book Manager project will evolve throughout the curriculum, allowing previou
 - [x] 01.02 — Data Types & Type Conversion
 - [x] 01.03 — Operators & Expressions
 - [x] 01.04 — Conditional Statements
-- [ ] 01.05 — Match Expressions
+- [x] 01.05 — Match Expressions
 - [ ] 01.06 — Loops & Iteration
 - [ ] 01.07 — Indexed Arrays
 - [ ] 01.08 — Associative Arrays
