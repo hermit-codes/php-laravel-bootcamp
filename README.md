@@ -1,87 +1,112 @@
-# PHP & Laravel Development Bootcamp
+# PHP & Symfony Development Bootcamp
 
-> A project-driven journey from PHP fundamentals to building complete web applications with Laravel and Blade.
+> A structured, project-driven journey from PHP fundamentals to building modern web applications with Symfony, Twig, and Doctrine.
 
 ## Overview
 
-This repository documents my journey toward becoming a proficient PHP and Laravel developer.
+This repository documents my journey toward becoming an independent PHP and Symfony developer.
 
-The goal is not simply to complete tutorials or memorize syntax. It is to develop the knowledge, confidence, and problem-solving skills necessary to independently design, build, test, and maintain applications.
+The objective is not simply to finish tutorials, memorize syntax, or reproduce applications built by other developers. It is to develop the knowledge, problem-solving skills, and practical experience necessary to design, build, debug, test, and maintain my own applications.
 
-The curriculum begins with PHP fundamentals and progresses through object-oriented programming, web development, databases, Laravel, Blade templates, and application architecture.
+The curriculum begins with PHP fundamentals and progresses through object-oriented programming, web development, SQL, Symfony, Twig, Doctrine ORM, application security, testing, and software architecture.
 
-Throughout the bootcamp, concepts are reinforced through practical exercises and an evolving book-management application.
+Throughout the bootcamp, concepts are reinforced through practical exercises, independent challenges, and an evolving personal Book Manager application.
+
+**Learning is measured by demonstrated understanding, not deadlines or the number of lessons completed.**
 
 ## Table of Contents
 
 - [Learning Objectives](#learning-objectives)
 - [Technology Stack](#technology-stack)
-- [Learning Approach](#learning-approach)
+- [Learning Philosophy](#learning-philosophy)
 - [Curriculum](#curriculum)
 - [Capstone Project](#capstone-project)
 - [Repository Structure](#repository-structure)
 - [Getting Started](#getting-started)
-- [Git Workflow](#git-workflow)
-- [Progress](#progress)
+- [Development Workflow](#development-workflow)
+- [GitHub Project Management](#github-project-management)
+- [Learning Resources](#learning-resources)
+- [Current Progress](#current-progress)
 
 ## Learning Objectives
 
 By completing this bootcamp, I aim to:
 
-- Develop a strong understanding of PHP syntax, data types, functions, and program flow.
-- Understand object-oriented programming and modern PHP development practices.
-- Work confidently with Composer and third-party packages.
-- Understand HTTP, HTML, CSS, and server-side web development.
-- Design and interact with relational databases using SQL.
-- Build applications using Laravel's routing, controllers, middleware, and Eloquent ORM.
-- Create reusable, maintainable interfaces using Blade templates and components.
-- Implement forms, validation, authentication, authorization, and automated testing.
-- Debug applications and solve programming problems independently.
-- Plan, build, and deploy complete applications from original ideas.
+- Understand PHP fundamentals, including variables, types, control flow, arrays, and functions.
+- Write readable, maintainable PHP using object-oriented programming principles.
+- Work confidently with Composer, namespaces, autoloading, and modern PHP conventions.
+- Understand HTTP, web servers, PHP-FPM, HTML, CSS, and server-side rendering.
+- Design relational databases and write SQL queries independently.
+- Build applications using Symfony's routing, controllers, services, and dependency injection.
+- Create reusable, accessible interfaces using Twig templates.
+- Persist application data using Doctrine ORM and database migrations.
+- Implement validation, authentication, authorization, and secure application practices.
+- Write automated tests and investigate problems using debugging tools.
+- Use Git, GitHub Issues, branches, and pull requests to manage development.
+- Plan, build, document, and deploy applications based on original ideas.
+
+The long-term goal is to become comfortable solving unfamiliar programming problems without depending on step-by-step tutorials.
 
 ## Technology Stack
+
+The bootcamp uses the following technologies as they become relevant to the curriculum.
 
 | Technology | Purpose |
 |---|---|
 | PHP 8.5 | Primary programming language |
-| Laravel | Web application framework |
-| Blade | Server-side templating engine |
-| HTML & CSS | User interface structure and styling |
-| JavaScript | Progressive client-side interactivity |
-| SQLite | Initial relational database |
+| Symfony 7.4 LTS | Web application framework |
+| Twig | Server-side templating |
+| Doctrine ORM | Object-relational mapping |
+| MySQL 8.4 | Relational database |
+| SQLite | Optional lightweight database for exercises |
+| Nginx | Local web server |
+| PHP-FPM | PHP application execution |
 | Composer | PHP dependency management |
-| Node.js & npm | Frontend tooling and dependencies |
-| Vite | Frontend asset bundling |
+| HTML & CSS | Application structure and presentation |
+| JavaScript | Progressive frontend interactivity |
+| Node.js & npm | Frontend development tooling |
 | Visual Studio Code | Development environment |
-| Git & GitHub | Version control and repository hosting |
+| Xdebug | Interactive PHP debugging |
+| Git & GitHub | Version control and project management |
+| Ubuntu 26.04 LTS | Primary development operating system |
 
-Additional technologies will be introduced when projects require them.
+Symfony and its related packages will be introduced during the appropriate curriculum phases.
 
-## Learning Approach
+The goal is to understand each technology's purpose before introducing additional complexity.
 
-This bootcamp follows a practice-first learning philosophy.
+## Learning Philosophy
 
-### One Concept at a Time
+The bootcamp follows a practice-first approach built around five principles.
 
-Lessons introduce concepts in manageable increments, with clear explanations and focused examples.
+### 1. Fundamentals Before Frameworks
 
-### Active Learning
+Understand PHP, HTTP, and SQL before relying on Symfony abstractions.
 
-Each lesson includes exercises, coding challenges, or active-recall questions to reinforce understanding.
+### 2. One Concept at a Time
 
-### Project-Based Development
+Lessons introduce manageable concepts through explanations, small examples, and focused practice.
 
-Concepts are applied to practical applications rather than remaining isolated theoretical exercises.
+### 3. Active Recall
 
-### Progressive Complexity
+Predict program behavior, explain code, and answer questions without immediately consulting solutions.
 
-Projects begin with simple implementations and evolve as new programming techniques are introduced.
+### 4. Learn Through Projects
 
-### Understanding Before Progression
+Apply concepts to practical exercises and progressively more sophisticated applications.
 
-Learning milestones are completed through demonstrated understanding rather than arbitrary deadlines.
+### 5. Demonstrate Understanding
+
+Complete independent challenges, review code, and verify functionality before advancing.
+
+Each lesson generally follows this learning cycle:
+
+**Learn → Practice → Recall → Apply → Review**
+
+There are no arbitrary completion deadlines.
 
 ## Curriculum
+
+The curriculum consists of twelve progressive phases.
 
 | Phase | Subject |
 |---|---|
@@ -91,110 +116,161 @@ Learning milestones are completed through demonstrated understanding rather than
 | 04 | Modern PHP & Composer |
 | 05 | Web Development Fundamentals |
 | 06 | Databases & SQL |
-| 07 | Laravel Fundamentals |
-| 08 | Blade Templates & Components |
-| 09 | Eloquent ORM & Database Relationships |
-| 10 | Building Complete Laravel Applications |
-| 11 | Advanced Laravel |
+| 07 | Symfony Fundamentals |
+| 08 | Twig Templates & Components |
+| 09 | Doctrine ORM & Database Relationships |
+| 10 | Building Complete Symfony Applications |
+| 11 | Advanced Symfony |
 | 12 | Independent Application Development |
 
-For detailed objectives, exercises, and milestones, see [ROADMAP.md](ROADMAP.md).
+Each phase includes learning objectives, practical exercises, and a project milestone.
+
+See [ROADMAP.md](ROADMAP.md) for the complete curriculum and current lesson progress.
 
 ## Capstone Project
 
 ### Book Manager
 
-The primary project is a personal book-management application inspired by ThingsBook.
+The primary application developed throughout the bootcamp is a personal Book Manager inspired by ThingsBook.
 
-The application will evolve alongside the curriculum, beginning as a simple PHP program and eventually becoming a complete Laravel application.
+It will evolve from a small PHP console program into a complete Symfony web application.
 
-Planned capabilities include:
+Planned functionality includes:
 
-- Personal book library and collections
-- Reading status and progress tracking
-- Book ratings and reviews
-- Reading journals and notes
-- Organization through categories and tags
-- Search and filtering
-- Reading statistics and dashboards
-- Responsive interfaces built with Blade
+- Managing a personal book library
+- Tracking reading status and progress
+- Organizing books by authors, genres, and custom shelves
+- Writing reviews and assigning ratings
+- Maintaining reading journals and notes
+- Searching and filtering book collections
+- Viewing reading statistics
+- Managing user accounts and preferences
+- Exporting and backing up application data
 
-Features will be implemented incrementally as the necessary concepts are learned.
+The application will be developed incrementally.
 
-Project source code will live in [`projects/book-manager/`](projects/book-manager/).
+Early versions will focus on PHP fundamentals. Later versions will introduce persistent storage, object-oriented design, HTTP, Symfony, Twig, and Doctrine.
+
+The project will live in [`projects/book-manager/`](projects/book-manager/).
+
+Features are planned learning objectives and will be implemented as the necessary skills are developed.
 
 ## Repository Structure
 
 ```text
-php-laravel-bootcamp/
+php-symfony-bootcamp/
 ├── docs/
 ├── lessons/
 │   └── phase-01-php-fundamentals/
 ├── projects/
 │   └── book-manager/
 ├── .editorconfig
+├── .gitattributes
 ├── .gitignore
 ├── README.md
 └── ROADMAP.md
 ```
 
-**Directory responsibilities:**
+Directory responsibilities:
 
-- `docs/` — Reference materials, learning notes, and project documentation.
-- `lessons/` — Exercises organized by curriculum phase.
-- `projects/` — Practical applications and progressively developed projects.
+- **`docs/`** — Learning references, development documentation, and project specifications.
+- **`lessons/`** — PHP and Symfony lessons organized by curriculum phase.
+- **`projects/`** — Practical applications, including the evolving Book Manager.
 
-Additional directories will be created as the curriculum progresses.
+Additional directories will be introduced when they serve a practical purpose.
 
 ## Getting Started
 
-### Prerequisites
+### Development Environment
 
-The development environment uses:
+The primary workstation runs Ubuntu 26.04 LTS with a local LEMP stack.
 
-- PHP 8.5
-- Composer
-- Node.js and npm
-- Git
-- Visual Studio Code
+The environment includes PHP 8.5, Nginx, MySQL, PHP-FPM, Composer, Node.js, Git, GitHub CLI, VS Code, and Xdebug.
 
-Laravel will be introduced during the appropriate curriculum phase.
+Symfony CLI and other framework-specific tools are introduced separately as part of the development environment setup.
 
 ### Clone the Repository
 
-```bash
-git clone https://github.com/hermit-codes/php-laravel-bootcamp.git
-cd php-laravel-bootcamp
-```
-
-### Run a PHP Exercise
-
-Once lesson files have been added, navigate to the relevant directory and run a PHP script:
+Using Git over SSH:
 
 ```bash
-php example.php
+mkdir -p ~/Projects
+
+cd ~/Projects
+
+git clone git@github.com:hermit-codes/php-symfony-bootcamp.git
+
+cd php-symfony-bootcamp
 ```
 
-Each project may provide additional setup instructions as its dependencies and architecture evolve.
+GitHub SSH authentication must be configured before cloning with this method.
 
-## Git Workflow
+### Run a PHP Lesson
 
-This repository follows Conventional Commits.
+From the repository root:
+
+```bash
+php lessons/phase-01-php-fundamentals/05-match.php
+```
+
+Individual lessons may include additional instructions.
+
+### Debug PHP with Xdebug
+
+The development environment supports debugging PHP scripts through VS Code.
+
+With the PHP Debug extension configured and its listener running:
+
+```bash
+XDEBUG_TRIGGER=1 php lessons/phase-01-php-fundamentals/05-match.php
+```
+
+VS Code can stop at breakpoints and display the current variables.
+
+## Development Workflow
+
+Development follows a lightweight, issue-driven workflow.
+
+1. Identify a meaningful task or learning objective.
+2. Create or select a GitHub issue when appropriate.
+3. Create a focused working branch from `main`.
+4. Implement and verify the changes.
+5. Commit using Conventional Commits.
+6. Open a pull request for significant changes.
+7. Review and merge the changes into `main`.
+
+### Branch Naming
 
 Examples:
 
 ```text
-docs: add bootcamp curriculum roadmap
-feat: implement book progress tracking
-fix: validate book page count
-refactor: simplify reading status logic
-test: add book validation tests
-chore: configure project tooling
+docs/symfony-transition
+chore/setup-symfony-cli
+feat/book-library
+fix/reading-progress-validation
 ```
 
-Completed lessons and milestones are committed to the `main` branch.
+Short-lived branches are preferred over maintaining unnecessary long-running development branches.
 
-Annotated Git tags mark the completion of curriculum phases:
+### Conventional Commits
+
+Examples:
+
+```text
+docs: update Symfony learning roadmap
+feat: complete PHP loops lesson
+feat: add book collection management
+fix: correct reading progress calculation
+test: add book validation tests
+refactor: simplify book status handling
+chore: configure development tooling
+```
+
+### Phase Milestones
+
+Completed curriculum phases receive annotated Git tags.
+
+Examples:
 
 ```text
 phase-01
@@ -204,13 +280,61 @@ phase-03
 
 Tags are created only after the relevant phase has been completed and reviewed.
 
-## Progress
+## GitHub Project Management
 
-**Current Phase:** 01 — PHP Fundamentals
+GitHub Issues track meaningful development work, curriculum improvements, and project features.
 
-**Current Focus:** Development environment, repository setup, and introductory PHP concepts.
+Milestones group related work into learning phases or project objectives.
 
-Progress will be updated as lessons and project milestones are completed.
+Labels identify the type and area of work.
+
+The repository uses the following conventions:
+
+| Label category | Purpose |
+|---|---|
+| `type:*` | Identifies the kind of work |
+| `area:*` | Identifies the affected part of the project |
+
+Examples include `type:lesson`, `type:feature`, `type:docs`, `area:curriculum`, and `area:book-manager`.
+
+`ROADMAP.md` remains the primary record of lesson progress.
+
+Not every exercise requires a GitHub issue or pull request.
+
+The workflow should support learning and development rather than create unnecessary administrative work.
+
+## Learning Resources
+
+The bootcamp prioritizes free, authoritative learning resources.
+
+Primary references include:
+
+- [PHP Manual](https://www.php.net/manual/en/)
+- [Symfony Documentation](https://symfony.com/doc/current/index.html)
+- [Symfony 7.4 Documentation](https://symfony.com/doc/7.4/index.html)
+- [Twig Documentation](https://twig.symfony.com/doc/)
+- [Doctrine ORM Documentation](https://www.doctrine-project.org/projects/doctrine-orm/en/current/index.html)
+- [MySQL 8.4 Reference Manual](https://dev.mysql.com/doc/refman/8.4/en/)
+- [Composer Documentation](https://getcomposer.org/doc/)
+- [Git Documentation](https://git-scm.com/doc)
+
+Additional free tutorials, videos, and practice resources will be added as they become relevant.
+
+Paid courses are not required.
+
+## Current Progress
+
+**Current phase:** 01 — PHP Fundamentals
+
+**Completed lessons:** 01.01–01.05
+
+**Next lesson:** 01.06 — Loops & Iteration
+
+**Current development work:** Transitioning the repository, curriculum, and development tooling from Laravel to Symfony.
+
+Completed lessons and existing Git history are preserved throughout the transition.
+
+Progress is tracked in [ROADMAP.md](ROADMAP.md).
 
 ---
 
