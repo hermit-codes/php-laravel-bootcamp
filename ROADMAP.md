@@ -1,10 +1,10 @@
-# PHP & Laravel Bootcamp — Learning Roadmap
+# PHP & Symfony Bootcamp — Learning Roadmap
 
-> A structured, practice-first curriculum for progressing from PHP fundamentals to independent Laravel application development.
+> A free, practice-first path from PHP fundamentals to independent Symfony application development.
 
 ## Table of Contents
 
-- [Learning Philosophy](#learning-philosophy)
+- [How to Use This Roadmap](#how-to-use-this-roadmap)
 - [Progress Overview](#progress-overview)
 - [Phase 01 — PHP Fundamentals](#phase-01--php-fundamentals)
 - [Phase 02 — Intermediate PHP](#phase-02--intermediate-php)
@@ -12,52 +12,62 @@
 - [Phase 04 — Modern PHP & Composer](#phase-04--modern-php--composer)
 - [Phase 05 — Web Development Fundamentals](#phase-05--web-development-fundamentals)
 - [Phase 06 — Databases & SQL](#phase-06--databases--sql)
-- [Phase 07 — Laravel Fundamentals](#phase-07--laravel-fundamentals)
-- [Phase 08 — Blade Templates & Components](#phase-08--blade-templates--components)
-- [Phase 09 — Eloquent ORM & Relationships](#phase-09--eloquent-orm--relationships)
-- [Phase 10 — Complete Laravel Applications](#phase-10--complete-laravel-applications)
-- [Phase 11 — Advanced Laravel](#phase-11--advanced-laravel)
+- [Phase 07 — Symfony Fundamentals](#phase-07--symfony-fundamentals)
+- [Phase 08 — Twig Templates & Components](#phase-08--twig-templates--components)
+- [Phase 09 — Doctrine ORM & Database Relationships](#phase-09--doctrine-orm--database-relationships)
+- [Phase 10 — Complete Symfony Applications](#phase-10--complete-symfony-applications)
+- [Phase 11 — Advanced Symfony](#phase-11--advanced-symfony)
 - [Phase 12 — Independent Development](#phase-12--independent-development)
 - [Phase Completion Criteria](#phase-completion-criteria)
+- [Free Reference Library](#free-reference-library)
 
 ---
 
-## Learning Philosophy
+## How to Use This Roadmap
 
-The goal of this bootcamp is to develop practical programming proficiency, not merely complete a collection of tutorials.
+The objective is to **build software independently**, not to finish tutorials quickly.
 
-The curriculum follows five principles:
+- **Fundamentals first:** Learn PHP, HTTP, and SQL before depending on Symfony abstractions.
+- **One concept at a time:** Work through a brief explanation, a focused exercise, and active recall.
+- **Practice before solutions:** Attempt challenges independently; request hints when needed.
+- **Build continuously:** Apply new concepts to the evolving Book Manager project.
+- **Demonstrate proficiency:** Complete the phase project and review code before advancing.
+- **No deadlines:** Progress is based on understanding, not speed.
 
-1. **Fundamentals first:** Understand how the language works before relying on frameworks.
-2. **Learn by building:** Apply new concepts through practical exercises and projects.
-3. **One concept at a time:** Introduce new material in manageable increments.
-4. **Active recall:** Reinforce understanding through questions, debugging, and independent exercises.
-5. **Demonstrated proficiency:** Advance through milestones based on understanding rather than deadlines.
+Each lesson follows **Learn → Practice → Recall → Apply → Review**. Check a lesson off only after completing its exercise and explaining the central concept in your own words. Independent challenges are opportunities to solve problems without line-by-line instructions; using official documentation is encouraged.
 
-The Book Manager project will evolve throughout the curriculum, allowing previously learned concepts to be revisited and reinforced.
+`ROADMAP.md` tracks learning progress. GitHub Issues track substantive work, such as curriculum changes, development environment setup, or application features. Not every lesson needs its own issue or pull request.
+
+### Technology and scope
+
+The learning workstation uses Ubuntu 26.04 LTS, PHP 8.5, Nginx, PHP-FPM, MySQL 8.4, Composer, VS Code, Xdebug, Git, and GitHub CLI. The framework track targets **Symfony 7.4 LTS**, with Twig and Doctrine introduced only when their phases begin. Symfony CLI setup is tracked separately; **no Symfony application is required during PHP fundamentals**.
+
+The Book Manager is a learning project inspired by ThingsBook; it is not a requirement to reproduce another application's design or feature set. Feature lists are intentions, not fixed deadlines.
 
 ## Progress Overview
 
 | Phase | Subject | Status |
 |---|---|---|
-| 01 | PHP Fundamentals | In Progress |
+| 01 | PHP Fundamentals | In Progress — 01.01–01.05 completed |
 | 02 | Intermediate PHP | Not Started |
 | 03 | Object-Oriented PHP | Not Started |
 | 04 | Modern PHP & Composer | Not Started |
 | 05 | Web Development Fundamentals | Not Started |
 | 06 | Databases & SQL | Not Started |
-| 07 | Laravel Fundamentals | Not Started |
-| 08 | Blade Templates & Components | Not Started |
-| 09 | Eloquent ORM & Relationships | Not Started |
-| 10 | Complete Laravel Applications | Not Started |
-| 11 | Advanced Laravel | Not Started |
+| 07 | Symfony Fundamentals | Not Started |
+| 08 | Twig Templates & Components | Not Started |
+| 09 | Doctrine ORM & Database Relationships | Not Started |
+| 10 | Complete Symfony Applications | Not Started |
+| 11 | Advanced Symfony | Not Started |
 | 12 | Independent Development | Not Started |
+
+**Next lesson:** 01.06 — Loops & Iteration.
 
 ---
 
 ## Phase 01 — PHP Fundamentals
 
-**Goal:** Develop a strong understanding of basic PHP syntax, data types, program flow, and reusable functions.
+**Goal:** Read and write small PHP programs using values, control flow, arrays, functions, and basic validation.
 
 ### Lessons
 
@@ -76,59 +86,57 @@ The Book Manager project will evolve throughout the curriculum, allowing previou
 - [ ] 01.13 — Working with Numbers
 - [ ] 01.14 — Basic Input Validation
 
-### Practical Exercises
+### Practice and assessment
 
-- Display book information using PHP variables.
-- Calculate reading progress percentages.
-- Use conditional statements to determine reading status.
-- Store multiple books in arrays.
-- Create reusable functions for book information.
-- Validate reading progress values.
+- Process a reading list using loops and arrays.
+- Calculate reading progress and select appropriate reading statuses.
+- Write functions that display, search, and summarize books.
+- Validate page counts and other user-provided values.
+- **Independent challenge:** Given a list of books, display only those currently being read, without a provided solution.
 
-### Project Milestone
+**Project checkpoint — Book Manager v0.1: Console Prototype.** Create a PHP program that stores a collection of books in memory, displays book information, tracks reading progress, and uses functions to organize its behavior.
 
-**Book Manager v0.1 — Console Prototype**
+**Ready to advance when:** You can explain your conditions, loops, arrays, and functions; complete the independent challenge; and demonstrate the console prototype working.
 
-Build a PHP program that stores and displays a collection of books, tracks reading progress, and uses functions to organize its behavior.
-
-### Completion Requirements
-
-- Explain and use fundamental PHP data types.
-- Write conditionals, loops, arrays, and functions independently.
-- Validate basic user input.
-- Complete the Book Manager console prototype.
-- Review and commit completed work.
+**Free references:** [PHP language reference](https://www.php.net/manual/en/langref.php), [PHP control structures](https://www.php.net/manual/en/language.control-structures.php).
 
 ---
 
 ## Phase 02 — Intermediate PHP
 
-**Goal:** Understand how PHP programs handle files, errors, data, and application state.
+**Goal:** Handle persistent data, errors, requests, and application state safely using plain PHP.
 
 ### Lessons
 
 - [ ] 02.01 — Variable Scope & Constants
-- [ ] 02.02 — Error Handling & Exceptions
-- [ ] 02.03 — Working with Files
+- [ ] 02.02 — Errors, Exceptions & Defensive Programming
+- [ ] 02.03 — Reading & Writing Files
 - [ ] 02.04 — JSON Encoding & Decoding
-- [ ] 02.05 — Date & Time
+- [ ] 02.05 — Dates, Times & Time Zones
 - [ ] 02.06 — Superglobals
 - [ ] 02.07 — Form Data & Request Handling
 - [ ] 02.08 — Sessions & Cookies
-- [ ] 02.09 — Organizing PHP Files
-- [ ] 02.10 — Basic Application Security
+- [ ] 02.09 — Splitting Code Across Files
+- [ ] 02.10 — Basic Input Safety & Error Reporting
 
-### Project Milestone
+### Practice and assessment
 
-**Book Manager v0.2 — Persistent Data**
+- Save a list of books to JSON and reload it after restarting the program.
+- Handle a missing file or malformed JSON without crashing unexpectedly.
+- Distinguish trusted internal data from untrusted user input.
+- **Independent challenge:** Recover gracefully from invalid saved data and explain the chosen behavior.
 
-Extend the application to save and load books using JSON files, handle invalid data, and organize code across multiple PHP files.
+**Project checkpoint — Book Manager v0.2: Persistent Data.** Extend the console application with JSON storage, explicit error handling, and reusable PHP files.
+
+**Ready to advance when:** You can trace a file read/write cycle, explain failure paths, and demonstrate that saved book information persists.
+
+**Free reference:** [PHP Manual](https://www.php.net/manual/en/).
 
 ---
 
 ## Phase 03 — Object-Oriented PHP
 
-**Goal:** Learn to organize application logic using objects and classes.
+**Goal:** Organize application behavior with well-scoped classes and clear responsibilities.
 
 ### Lessons
 
@@ -136,266 +144,349 @@ Extend the application to save and load books using JSON files, handle invalid d
 - [ ] 03.02 — Properties & Methods
 - [ ] 03.03 — Constructors
 - [ ] 03.04 — Visibility & Encapsulation
-- [ ] 03.05 — Type Declarations
-- [ ] 03.06 — Inheritance
-- [ ] 03.07 — Interfaces
+- [ ] 03.05 — Type Declarations & Return Types
+- [ ] 03.06 — Inheritance & Composition
+- [ ] 03.07 — Interfaces & Contracts
 - [ ] 03.08 — Abstract Classes
 - [ ] 03.09 — Traits
 - [ ] 03.10 — Namespaces
 
-### Project Milestone
+### Practice and assessment
 
-**Book Manager v0.3 — Object-Oriented Refactor**
+- Model a `Book` with validated page count and reading progress.
+- Give a `Library` responsibility for managing its collection.
+- Compare composition with inheritance and justify a design choice.
+- **Independent challenge:** Add a new book-related behavior without turning one class into a catch-all.
 
-Refactor the book-management logic into classes with clearly defined responsibilities.
+**Project checkpoint — Book Manager v0.3: Object-Oriented Refactor.** Refactor the existing logic into small, testable classes while preserving functionality.
+
+**Ready to advance when:** You can explain each class's responsibility and use interfaces, inheritance, or composition for a clear reason rather than by habit.
+
+**Free reference:** [PHP classes and objects](https://www.php.net/manual/en/language.oop5.php).
 
 ---
 
 ## Phase 04 — Modern PHP & Composer
 
-**Goal:** Understand modern PHP development tools, dependency management, and maintainable project structure.
+**Goal:** Structure PHP projects with contemporary language features, dependency management, and automated tests.
 
 ### Lessons
 
 - [ ] 04.01 — Composer Fundamentals
 - [ ] 04.02 — `composer.json` & `composer.lock`
-- [ ] 04.03 — PSR Standards
-- [ ] 04.04 — Autoloading
-- [ ] 04.05 — Modern PHP Features
-- [ ] 04.06 — Dependency Injection Fundamentals
-- [ ] 04.07 — PHPUnit or Pest Fundamentals
-- [ ] 04.08 — Debugging & Code Quality
+- [ ] 04.03 — PSR Coding Standards
+- [ ] 04.04 — PSR-4 Autoloading
+- [ ] 04.05 — Modern PHP Features (Enums, Attributes & Readonly)
+- [ ] 04.06 — Dependency Injection Principles
+- [ ] 04.07 — PHPUnit Fundamentals
+- [ ] 04.08 — Xdebug, Static Analysis & Formatting
 
-### Project Milestone
+### Practice and assessment
 
-**Book Manager v0.4 — Structured PHP Application**
+- Configure PSR-4 autoloading for Book Manager classes.
+- Write focused tests for book progress and invalid input.
+- Debug a failing test using breakpoints and variable inspection.
+- **Independent challenge:** Add a small feature, its tests, and a clear Conventional Commit without step-by-step guidance.
 
-Introduce Composer autoloading, organize source code into namespaces, and write automated tests for important behavior.
+**Project checkpoint — Book Manager v0.4: Structured PHP Application.** Introduce Composer, namespaces, automated tests, and a consistent code style.
+
+**Ready to advance when:** You can install dependencies safely, explain what Composer locks, and run and debug tests.
+
+**Free references:** [Composer documentation](https://getcomposer.org/doc/), [PHP-FIG standards](https://www.php-fig.org/psr/), [PHPUnit documentation](https://docs.phpunit.de/).
 
 ---
 
 ## Phase 05 — Web Development Fundamentals
 
-**Goal:** Understand how PHP applications interact with browsers and HTTP.
+**Goal:** Understand browser-to-server communication and build a small web interface without a framework.
 
 ### Lessons
 
-- [ ] 05.01 — How the Web Works
-- [ ] 05.02 — HTTP Requests & Responses
-- [ ] 05.03 — HTML Fundamentals
-- [ ] 05.04 — CSS Fundamentals
-- [ ] 05.05 — PHP in HTML
-- [ ] 05.06 — Forms & HTTP Methods
-- [ ] 05.07 — GET & POST Requests
-- [ ] 05.08 — Validation & Escaping
-- [ ] 05.09 — Sessions & Authentication Concepts
-- [ ] 05.10 — Basic Responsive Design
+- [ ] 05.01 — How the Web Works: Browser, Server & DNS
+- [ ] 05.02 — HTTP Requests, Responses & Status Codes
+- [ ] 05.03 — Semantic HTML
+- [ ] 05.04 — CSS Fundamentals & Responsive Layout
+- [ ] 05.05 — Rendering HTML with PHP
+- [ ] 05.06 — Forms, GET & POST
+- [ ] 05.07 — Validation & User Feedback
+- [ ] 05.08 — Output Escaping, CSRF & Safe Handling
+- [ ] 05.09 — Sessions, Cookies & Authentication Concepts
+- [ ] 05.10 — Nginx, PHP-FPM & Web Debugging
 
-### Project Milestone
+### Practice and assessment
 
-**Book Manager v0.5 — First Web Interface**
+- Explain how a browser request reaches a PHP script through Nginx and PHP-FPM.
+- Build accessible forms to view and add books.
+- Display validation errors and escape user-generated text.
+- **Independent challenge:** Diagnose an invalid form submission and provide useful feedback without exposing raw error details.
 
-Create a browser-based interface for viewing books, submitting forms, and displaying reading progress.
+**Project checkpoint — Book Manager v0.5: First Web Interface.** Build simple pages and forms backed by the existing PHP application logic.
+
+**Ready to advance when:** You can follow a request/response cycle, explain why escaping matters, and debug an HTTP request.
+
+**Free references:** [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web), [PHP web features](https://www.php.net/manual/en/features.php).
 
 ---
 
 ## Phase 06 — Databases & SQL
 
-**Goal:** Learn how applications store, retrieve, and manage structured data.
+**Goal:** Work confidently with relational data and SQL before adopting an ORM.
 
 ### Lessons
 
-- [ ] 06.01 — Relational Database Fundamentals
-- [ ] 06.02 — Tables, Columns & Data Types
-- [ ] 06.03 — Primary & Foreign Keys
-- [ ] 06.04 — SQL SELECT Queries
-- [ ] 06.05 — INSERT, UPDATE & DELETE
-- [ ] 06.06 — Filtering, Sorting & Joins
-- [ ] 06.07 — Database Relationships
-- [ ] 06.08 — PHP Data Objects (PDO)
-- [ ] 06.09 — Prepared Statements
-- [ ] 06.10 — Transactions & Data Integrity
+- [ ] 06.01 — Relational Database Concepts
+- [ ] 06.02 — Tables, Columns, Data Types & Constraints
+- [ ] 06.03 — Primary Keys, Foreign Keys & Referential Integrity
+- [ ] 06.04 — `SELECT` & Projection
+- [ ] 06.05 — `INSERT`, `UPDATE` & `DELETE`
+- [ ] 06.06 — Filtering, Sorting, Aggregation & Joins
+- [ ] 06.07 — Modeling One-to-Many & Many-to-Many Relationships
+- [ ] 06.08 — PHP PDO & Database Connections
+- [ ] 06.09 — Prepared Statements & Parameter Binding
+- [ ] 06.10 — Transactions, Indexes & Query Basics
+- [ ] 06.11 — Schema Changes, Backups & Restores
 
-### Project Milestone
+### Practice and assessment
 
-**Book Manager v0.6 — SQLite Database**
+- Design book, author, and review tables with appropriate keys.
+- Write SQL queries before recreating their behavior in PHP.
+- Use PDO with bound parameters rather than interpolating user input.
+- Restore a disposable development database from a test backup.
+- **Independent challenge:** Query books and their authors using a join, then explain why the result is correct.
 
-Replace JSON storage with SQLite and implement persistent CRUD operations using PDO.
+**Project checkpoint — Book Manager v0.6: MySQL Persistence.** Replace JSON storage with **MySQL 8.4**, using the preconfigured `book_manager_dev` database and a restricted application account. SQLite remains optional for small experiments or isolated tests.
+
+**Ready to advance when:** You can create and query a schema, explain relationships, safely modify data, and distinguish Git-managed schema code from private database contents and backups.
+
+**Free references:** [MySQL 8.4 Manual](https://dev.mysql.com/doc/refman/8.4/en/), [PHP PDO](https://www.php.net/manual/en/book.pdo.php).
 
 ---
 
-## Phase 07 — Laravel Fundamentals
+## Phase 07 — Symfony Fundamentals
 
-**Goal:** Understand Laravel's architecture and core development workflow.
+**Goal:** Understand Symfony's request lifecycle, directory structure, configuration, and dependency injection.
 
 ### Lessons
 
-- [ ] 07.01 — Creating a Laravel Application
-- [ ] 07.02 — Laravel Directory Structure
-- [ ] 07.03 — Artisan CLI
-- [ ] 07.04 — Routing
-- [ ] 07.05 — Controllers
-- [ ] 07.06 — Requests & Responses
-- [ ] 07.07 — Configuration & Environment Variables
-- [ ] 07.08 — Middleware
-- [ ] 07.09 — Dependency Injection & Service Container
-- [ ] 07.10 — Validation Fundamentals
+- [ ] 07.01 — Symfony CLI, Requirements & Creating a Symfony 7.4 Application
+- [ ] 07.02 — Project Layout, Flex Recipes & Composer Packages
+- [ ] 07.03 — Symfony Console & `bin/console`
+- [ ] 07.04 — Routing with PHP Attributes
+- [ ] 07.05 — Controllers & Responses
+- [ ] 07.06 — HttpFoundation Requests & the Request Lifecycle
+- [ ] 07.07 — Configuration, Environments & Secrets
+- [ ] 07.08 — Services, Autowiring & Dependency Injection
+- [ ] 07.09 — Events, Listeners & Request Handling Concepts
+- [ ] 07.10 — Validation & Error Handling Basics
 
-### Project Milestone
+### Practice and assessment
 
-**Book Manager v0.7 — Laravel Foundation**
+- Trace a browser request from its route to a controller response.
+- Extract application logic into a service rather than placing it all in a controller.
+- Use environment-specific configuration without committing credentials.
+- **Independent challenge:** Add a book-related endpoint and explain which component does each job.
 
-Create a Laravel application and migrate the book-management functionality into routes, controllers, and framework conventions.
+**Project checkpoint — Book Manager v0.7: Symfony Foundation.** Create the Symfony application when this phase begins and migrate selected existing functionality into routes, controllers, and services.
+
+**Ready to advance when:** You can explain route matching, controller responsibilities, dependency injection, and application configuration in your own words.
+
+**Free references:** [Symfony 7.4 documentation](https://symfony.com/doc/7.4/index.html), [Symfony setup](https://symfony.com/doc/7.4/setup.html).
 
 ---
 
-## Phase 08 — Blade Templates & Components
+## Phase 08 — Twig Templates & Components
 
-**Goal:** Build maintainable server-rendered interfaces using Laravel Blade.
+**Goal:** Build maintainable, accessible server-rendered interfaces with Twig.
 
 ### Lessons
 
-- [ ] 08.01 — Blade Syntax
-- [ ] 08.02 — Displaying Data Safely
-- [ ] 08.03 — Conditionals & Loops
-- [ ] 08.04 — Layouts
-- [ ] 08.05 — Sections & Template Inheritance
-- [ ] 08.06 — Blade Components
-- [ ] 08.07 — Component Props & Slots
-- [ ] 08.08 — Forms & Validation Errors
-- [ ] 08.09 — Asset Management with Vite
-- [ ] 08.10 — Responsive UI Patterns
+- [ ] 08.01 — Twig Syntax & Rendering Variables
+- [ ] 08.02 — Escaping and Safe Output
+- [ ] 08.03 — Conditionals, Loops & Filters
+- [ ] 08.04 — Layouts, Blocks & Template Inheritance
+- [ ] 08.05 — Includes, Macros & Reusable UI Patterns
+- [ ] 08.06 — Symfony UX Twig Components (Optional Introduction)
+- [ ] 08.07 — Forms & Symfony Form Basics
+- [ ] 08.08 — Form Validation Errors & Feedback
+- [ ] 08.09 — Static Assets, AssetMapper & Frontend Tooling Options
+- [ ] 08.10 — Accessibility & Responsive Interfaces
 
-### Project Milestone
+### Practice and assessment
 
-**Book Manager v0.8 — Blade Interface**
+- Build shared navigation, page layouts, and book cards.
+- Render form errors and user data safely.
+- Explain when a simple include is sufficient and when a component is useful.
+- **Independent challenge:** Implement a reading-progress display with reusable Twig templates.
 
-Build reusable layouts, book cards, navigation, reading progress indicators, and responsive pages.
+**Project checkpoint — Book Manager v0.8: Twig Interface.** Create reusable, responsive book pages, forms, navigation, and progress displays.
+
+**Ready to advance when:** You can build a Twig page without copying a full template and explain auto-escaping and form rendering.
+
+**Free references:** [Twig documentation](https://twig.symfony.com/doc/), [Symfony Twig](https://symfony.com/doc/7.4/templates.html).
 
 ---
 
-## Phase 09 — Eloquent ORM & Relationships
+## Phase 09 — Doctrine ORM & Database Relationships
 
-**Goal:** Use Laravel's database tools to manage application data.
+**Goal:** Use Doctrine while retaining a clear understanding of the SQL and schema underneath.
 
 ### Lessons
 
-- [ ] 09.01 — Database Configuration
-- [ ] 09.02 — Migrations
-- [ ] 09.03 — Eloquent Models
-- [ ] 09.04 — Query Builder
-- [ ] 09.05 — Model CRUD Operations
-- [ ] 09.06 — One-to-One Relationships
-- [ ] 09.07 — One-to-Many Relationships
-- [ ] 09.08 — Many-to-Many Relationships
-- [ ] 09.09 — Factories & Seeders
-- [ ] 09.10 — Pagination & Query Optimization
+- [ ] 09.01 — Symfony Database Configuration & `DATABASE_URL`
+- [ ] 09.02 — Doctrine Entities & Field Mapping
+- [ ] 09.03 — Doctrine Migrations
+- [ ] 09.04 — EntityManager & Persistence
+- [ ] 09.05 — Repository Queries
+- [ ] 09.06 — One-to-One & Many-to-One Associations
+- [ ] 09.07 — One-to-Many & Many-to-Many Associations
+- [ ] 09.08 — Fixtures & Test Data
+- [ ] 09.09 — QueryBuilder, Pagination & Filtering
+- [ ] 09.10 — Query Performance & Avoiding N+1 Queries
 
-### Project Milestone
+### Practice and assessment
 
-**Book Manager v0.9 — Relational Data**
+- Map books, authors, reviews, and categories to a relational schema.
+- Create and review migrations before applying them.
+- Compare Doctrine operations with the SQL they generate.
+- **Independent challenge:** Retrieve an author's books efficiently and explain the chosen association.
 
-Implement persistent books, reading sessions, reviews, categories, and tags using Eloquent relationships.
+**Project checkpoint — Book Manager v0.9: Relational Data with Doctrine.** Model and persist books, authors, genres, reading sessions, reviews, and tags where they support planned features.
+
+**Ready to advance when:** You can create entities, migrate a schema, write repository queries, and explain common association pitfalls.
+
+**Free references:** [Symfony Doctrine integration](https://symfony.com/doc/7.4/doctrine.html), [Doctrine ORM](https://www.doctrine-project.org/projects/doctrine-orm/en/current/index.html).
 
 ---
 
-## Phase 10 — Complete Laravel Applications
+## Phase 10 — Complete Symfony Applications
 
-**Goal:** Develop the skills required to build secure, maintainable applications.
+**Goal:** Build a secure, tested, usable application from end to end.
 
 ### Lessons
 
-- [ ] 10.01 — Authentication
-- [ ] 10.02 — Authorization & Policies
-- [ ] 10.03 — Form Requests
-- [ ] 10.04 — File Uploads & Storage
-- [ ] 10.05 — Search & Filtering
-- [ ] 10.06 — Pagination
-- [ ] 10.07 — Notifications
-- [ ] 10.08 — Feature Testing
-- [ ] 10.09 — Application Security
-- [ ] 10.10 — Deployment Fundamentals
+- [ ] 10.01 — Authentication & Password Hashing
+- [ ] 10.02 — Authorization, Roles & Voters
+- [ ] 10.03 — Symfony Forms & Validation in Depth
+- [ ] 10.04 — CSRF Protection, XSS Prevention & Secure Defaults
+- [ ] 10.05 — File Uploads & Storage
+- [ ] 10.06 — Search, Filters & Pagination
+- [ ] 10.07 — Flash Messages & User Feedback
+- [ ] 10.08 — Unit, Integration & Functional Tests
+- [ ] 10.09 — Error Handling, Logging & Observability Basics
+- [ ] 10.10 — Deployment Preparation & Environment Separation
 
-### Project Milestone
+### Practice and assessment
 
-**Book Manager v1.0 — Complete Application**
+- Restrict private book data to its authorized user.
+- Exercise successful and invalid form submissions through automated tests.
+- Explain authentication versus authorization and recognize unsafe input handling.
+- **Independent challenge:** Build, test, and review a complete book-management feature from a written issue.
 
-Deliver a functional book-management application with user accounts, reading progress, reviews, search, and automated tests.
+**Project checkpoint — Book Manager v1.0: Complete Application.** Deliver usable book collection management, reading tracking, reviews, search, account security, and meaningful tests.
+
+**Ready to advance when:** Critical user flows have tests, security-sensitive functionality is reviewed, and the application can be configured without exposing secrets.
+
+**Free references:** [Symfony Security](https://symfony.com/doc/7.4/security.html), [Symfony Testing](https://symfony.com/doc/7.4/testing.html).
 
 ---
 
-## Phase 11 — Advanced Laravel
+## Phase 11 — Advanced Symfony
 
-**Goal:** Understand techniques used to design and maintain larger Laravel applications.
+**Goal:** Introduce advanced Symfony capabilities when a practical need justifies them.
 
 ### Lessons
 
-- [ ] 11.01 — Service Container & Providers
-- [ ] 11.02 — Events & Listeners
-- [ ] 11.03 — Jobs & Queues
-- [ ] 11.04 — Task Scheduling
-- [ ] 11.05 — Caching
-- [ ] 11.06 — API Development
-- [ ] 11.07 — API Authentication
-- [ ] 11.08 — Application Architecture
-- [ ] 11.09 — Performance & Optimization
-- [ ] 11.10 — Logging & Monitoring
+- [ ] 11.01 — Service Container Design & Service Configuration
+- [ ] 11.02 — Events, Subscribers & Decoupling
+- [ ] 11.03 — Messenger: Messages, Handlers & Queues
+- [ ] 11.04 — Scheduler & Background Work
+- [ ] 11.05 — Cache Component & Performance
+- [ ] 11.06 — JSON APIs & Serialization
+- [ ] 11.07 — API Authentication & Authorization Concepts
+- [ ] 11.08 — Mailer & Notifications
+- [ ] 11.09 — Profiling, Logging & Query Optimization
+- [ ] 11.10 — Refactoring, Architecture & Deployment Hardening
 
-### Project Milestone
+### Practice and assessment
 
-**Book Manager v1.1 — Advanced Features**
+- Identify a genuine need for a queue, scheduled job, cache, or event; avoid adding infrastructure without a use case.
+- Profile a slow operation before optimizing it.
+- **Independent challenge:** Implement one advanced capability and document its tradeoffs, tests, and failure modes.
 
-Introduce selected advanced features based on practical application requirements.
+**Project checkpoint — Book Manager v1.1: Selected Advanced Features.** Add only the advanced features that improve the application or teach an identified skill.
+
+**Ready to advance when:** You can explain why the advanced feature was chosen, how it fails, and how it is tested or monitored.
+
+**Free references:** [Symfony Messenger](https://symfony.com/doc/7.4/messenger.html), [Symfony documentation](https://symfony.com/doc/7.4/index.html).
 
 ---
 
 ## Phase 12 — Independent Development
 
-**Goal:** Demonstrate the ability to design and build an application independently.
+**Goal:** Plan, implement, and explain an original PHP/Symfony application without a step-by-step tutorial.
 
 ### Milestones
 
-- [ ] Identify an original application idea.
-- [ ] Define functional and nonfunctional requirements.
-- [ ] Plan the database schema.
-- [ ] Design the application architecture.
-- [ ] Create an implementation roadmap.
-- [ ] Build the application incrementally.
-- [ ] Write automated tests.
-- [ ] Debug and refactor independently.
-- [ ] Prepare the application for deployment.
-- [ ] Document the completed project.
+- [ ] Identify an original application idea and intended users.
+- [ ] Document functional and nonfunctional requirements.
+- [ ] Break the project into meaningful GitHub issues.
+- [ ] Design the data model and explain its relationships.
+- [ ] Select an appropriate application architecture.
+- [ ] Establish tests and basic development workflows.
+- [ ] Implement features incrementally using focused branches and pull requests.
+- [ ] Debug and refactor without depending on supplied solutions.
+- [ ] Address security, accessibility, and performance basics.
+- [ ] Prepare and test a reproducible deployment procedure.
+- [ ] Document operation, configuration, and recovery steps.
+- [ ] Demonstrate the finished application and explain key decisions.
 
-### Final Project
+**Final project — Independent Symfony Application.** Build an original application that demonstrates PHP, Symfony, Twig, Doctrine, SQL, testing, Git, and deployment fundamentals.
 
-**Independent Laravel Application**
-
-Design and build an original application using the concepts and techniques developed throughout the bootcamp.
-
-The final application should demonstrate proficiency in PHP, Laravel, Blade, database design, testing, and practical software development.
+**Completion requirement:** Explain the design and tradeoffs, demonstrate core flows, run the tests, and reproduce the application from its repository and documented environment configuration.
 
 ---
 
 ## Phase Completion Criteria
 
-A phase is complete when:
+A phase is complete only when:
 
-1. All required lessons and exercises have been completed.
-2. The associated project milestone is functional.
-3. The code has been reviewed and tested appropriately.
-4. The README and roadmap reflect the current progress.
-5. Changes have been committed using Conventional Commits.
-6. The completed phase has been marked with an annotated Git tag.
+1. Required lessons and practice exercises are completed.
+2. The independent challenge is attempted and reviewed.
+3. The project checkpoint runs and meets its documented acceptance criteria.
+4. Code has been reviewed, tested where appropriate, and debugged when necessary.
+5. `README.md` and `ROADMAP.md` reflect the actual state of the project.
+6. Changes are saved with clear Conventional Commits; substantive work uses an issue, focused branch, and pull request where appropriate.
+7. A completed phase is marked with an **annotated Git tag** on the relevant commit.
 
-Example:
+Example after completing Phase 01:
 
 ```bash
 git tag -a phase-01 -m "Complete Phase 01: PHP Fundamentals"
 git push origin phase-01
 ```
 
-Phase tags are created only after the corresponding phase is fully completed.
+**Do not tag an incomplete phase.** The Symfony transition does not reset or invalidate previously completed PHP lessons.
+
+## Free Reference Library
+
+Primary sources used throughout the bootcamp:
+
+| Subject | Reference |
+|---|---|
+| PHP | [Official PHP Manual](https://www.php.net/manual/en/) |
+| Composer | [Composer Documentation](https://getcomposer.org/doc/) |
+| PHP standards | [PHP-FIG PSRs](https://www.php-fig.org/psr/) |
+| Web fundamentals | [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web) |
+| MySQL | [MySQL 8.4 Reference Manual](https://dev.mysql.com/doc/refman/8.4/en/) |
+| Symfony | [Symfony 7.4 Documentation](https://symfony.com/doc/7.4/index.html) |
+| Twig | [Twig Documentation](https://twig.symfony.com/doc/) |
+| Doctrine | [Doctrine ORM Documentation](https://www.doctrine-project.org/projects/doctrine-orm/en/current/index.html) |
+| Testing | [PHPUnit Documentation](https://docs.phpunit.de/) |
+| Git | [Git Documentation](https://git-scm.com/doc) |
+| Debugging | [Xdebug Documentation](https://xdebug.org/docs/) |
+
+The phase references are starting points, not assignments to read entire manuals. Specific free videos and tutorials can be curated in `docs/RESOURCES.md` as needed. Framework instructions should be checked against the **Symfony version actually used by the project**.
 
 ---
 
-*Progress is measured by understanding and practical capability, not speed.*
+*Progress is measured by understanding, practice, and independent capability—not speed.*
